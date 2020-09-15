@@ -8,14 +8,36 @@ public class BankAccountDto {
     private String lastName;
     private String patronymic;
     private long accountNumber;
-    private AccountType accountType;
 
-    public BankAccountDto(UUID uuid, String firstName, String lastName, String patronymic, long accountNumber, AccountType accountType) {
+    public BankAccountDto(UUID uuid, String firstName, String lastName, String patronymic, long accountNumber) {
         this.uuid = uuid;
         this.firstName = firstName;
         this.lastName = lastName;
         this.patronymic = patronymic;
         this.accountNumber = accountNumber;
-        this.accountType = accountType;
     }
+
+    public UUID getUuid() {
+        return uuid;
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+
+    public String getPatronymic() {
+        return patronymic;
+    }
+
+
+    public long getAccountNumber() {
+        return accountNumber;
+    }
+
+
 }
